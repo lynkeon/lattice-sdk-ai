@@ -3,7 +3,7 @@ name: lattice-sdk-integration
 description: >-
   Guides building sandbox-first Lattice SDK integrations without assuming a
   language or protocol up front. Use when the user wants to build, modify, or
-  review a Lattice integration — publishing entities/tracks, connecting a sensor
+  review a Lattice integration: publishing entities/tracks, connecting a sensor
   or telemetry source, building a taskable agent, watching or consuming
   entities, uploading media/objects, or bridging an external system into
   Lattice. Classifies the integration, recommends REST or gRPC when

@@ -1,7 +1,7 @@
 {
   "name": "lattice-plugin",
   "version": "1.3.0",
-  "description": "Build sandbox-first Lattice integrations across REST and gRPC — publish entities, run taskable agents, use the Objects API, and validate against a live environment.",
+  "description": "Build sandbox-first Lattice integrations across REST and gRPC. Publish entities, run taskable agents, use the Objects API, and validate against a live environment.",
   "author": {
     "name": "Anduril",
     "url": "https://www.anduril.com"

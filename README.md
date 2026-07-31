@@ -11,34 +11,33 @@
 
 <br/>
 
-  # Lattice SDK AI
+  # Lattice SDK Skills
 
-Official plugins for building [Lattice](https://www.anduril.com/lattice/) integrations with
-[OpenAI Codex](https://developers.openai.com/codex). They cover REST and gRPC, and verify the
-integration against a live Lattice Sandbox.
+Official skills for building [Lattice](https://www.anduril.com/lattice/) integrations. These teach
+coding agents how to create integrations using the latest best practices.
 
 </div>
 
-## Install
+## Installation
+
+### Codex
+
+Install the [plugin](lattice-plugin/README.md), which includes the skills and updates automatically:
 
 ```bash
 codex plugin marketplace add anduril/lattice-sdk-ai
-codex
+codex plugin add lattice-plugin@lattice-sdk-ai
 ```
 
-Then inside Codex run `/plugins`, open the `lattice-sdk-ai` marketplace, and install
-`Lattice Plugin`.
+### Manual installation
 
-## Plugins
+> This route does not update itself. Re-run `npx skills update -y` when you want newer versions of
+> the skills.
 
-| Plugin | Use for |
-|--------|---------|
-| [`lattice-plugin`](lattice-plugin/README.md) | Building Lattice integrations in any language: protocol choice (REST or gRPC), authentication, the Entities, Tasks, and Objects APIs, and live verification against a Lattice Sandbox. |
+Run this command in your project:
 
-To confirm the install worked, ask the agent:
-
-```text
-Help me build a Lattice integration for my system.
+```bash
+npx skills add anduril/lattice-sdk-ai/lattice-plugin
 ```
 
 ## License
