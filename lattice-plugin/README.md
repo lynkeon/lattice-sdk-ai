@@ -6,16 +6,15 @@ To install, see the [marketplace README](../README.md).
 
 ## What it does
 
-The plugin treats a Lattice integration as four decisions:
+The plugin treats a Lattice integration as three decisions:
 
 - Language: any language.
 - Protocol: REST or gRPC.
 - Auth: `ENVIRONMENT_TOKEN`, or OAuth client credentials.
-- Deployment target: Sandbox preferred.
 
 When a request is underspecified, the plugin narrows these choices, recommends a path, and lets the
 user confirm. It then builds the integration, verifies it against the Sandbox, and explains the
-result in terms of the Entities, Tasks, and Objects APIs.
+result in terms of the Lattice APIs.
 
 ## Skills
 
@@ -28,6 +27,3 @@ result in terms of the Entities, Tasks, and Objects APIs.
 ## Layout
 
 `skills/` holds the skills, one directory per skill, each with a `SKILL.md`.
-
-Codex reads `.codex-plugin/plugin.json`, which points at `skills/`. Agents that read
-`.agents/skills` pick the same skills up once they are installed there.

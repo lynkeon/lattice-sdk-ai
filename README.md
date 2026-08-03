@@ -13,7 +13,7 @@
 
   # Lattice SDK Skills
 
-Official skills for building [Lattice](https://www.anduril.com/lattice/) integrations. These teach
+Official skills for building [Lattice](https://developer.anduril.com/) integrations. These teach
 coding agents how to create integrations using the latest best practices.
 
 </div>
