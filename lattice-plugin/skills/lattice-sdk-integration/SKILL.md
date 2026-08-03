@@ -30,7 +30,7 @@ fact* you need.
   generated client abstracts them behind methods like `entities.publish_entity(...)`, so
   introspection will never reveal them. Fetch the spec instead.
 - **gRPC surface** (RPCs, message shapes) → your installed/generated stubs, and the gRPC reference
-  at <https://developer.anduril.com/openapi/grpc.json> for browsing.
+  at <https://developer.anduril.com/reference/grpc> for browsing.
 - **Anything else in the docs** → start from <https://developer.anduril.com/llms.txt>, the
   AI-agent site map (append `.md` to any docs page URL for clean markdown).
 
@@ -122,11 +122,12 @@ When a request doesn't fit a single row above, consult the Lattice docs. Know wh
   clean markdown.
 - [REST OpenAPI spec](https://developer.anduril.com/openapi/rest.json) — the fetchable REST contract
   (`/api/v1/...` paths, request/response schemas). **The source for REST URL paths.**
-- [gRPC reference](https://developer.anduril.com/openapi/grpc.json) — the gRPC surface for browsing
+- [gRPC reference](https://developer.anduril.com/reference/grpc) — the gRPC surface for browsing
   (RPC names, message shapes). Reference only — generate stubs from your installed SDK, not this.
 - [API reference](https://developer.anduril.com/reference) — the human-rendered HTML reference site.
 - [Guides](https://developer.anduril.com/guides) — getting started, entities, tasks, objects.
 - [Samples](https://developer.anduril.com/samples/overview) — runnable sample apps.
 
 > Note: `https://developer.anduril.com/openapi.json` is an HTML index page, **not** a spec — use
-> `openapi/rest.json` / `openapi/grpc.json` above for machine-readable contracts.
+> `openapi/rest.json` above for the machine-readable REST contract. There is no fetchable gRPC
+> spec; the gRPC surface is browsable HTML, so take gRPC contracts from your generated stubs.

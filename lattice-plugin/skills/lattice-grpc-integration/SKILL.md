@@ -30,8 +30,7 @@ either add a small REST companion or reconsider the protocol choice.
 1. **Start from the exact protobuf contracts.**
    - Use your installed/generated stubs as the wire contract (install or generate them first —
      detect with an import/resolve probe, not a filesystem search). For browsing the public Lattice
-     services, use the [gRPC reference](https://developer.anduril.com/openapi/grpc.json) or the
-     [rendered reference](https://developer.anduril.com/reference).
+     services, use the [gRPC reference](https://developer.anduril.com/reference/grpc).
    - Treat the package name and fully qualified message names as exact — read them from your
      generated stubs, don't guess.
 
@@ -83,7 +82,7 @@ either add a small REST companion or reconsider the protocol choice.
   [enum snapshot](../lattice-sdk-integration/references/enum-literals.generated.md) is a
   convenience that may lag; see
   [enums.md](../lattice-sdk-integration/references/enums.md). For browsing the surface, use the
-  [gRPC reference](https://developer.anduril.com/openapi/grpc.json).
+  [gRPC reference](https://developer.anduril.com/reference/grpc).
 
 ### Streaming and task agents
 
