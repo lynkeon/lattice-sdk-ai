@@ -326,7 +326,7 @@ enum-trap warning in [enums.md](enums.md).
 
 ## Optional but common components
 
-- `task_catalog=TaskCatalog(task_definitions=[TaskDefinition(task_specification_url="type.googleapis.com/<TaskName>")])` — required to be taskable.
+- `task_catalog=TaskCatalog(task_definitions=[TaskDefinition(task_specification_url="type.googleapis.com/anduril.tasks.v2.Investigate")])` — required to be taskable. Use a real built-in type (`anduril.tasks.v2.*`) or your own (`<your-org>.tasks.v1.<YourTaskName>`), never a placeholder.
 - `description=...` — free-text description.
 - `created_time=...` (RFC3339) — when the entity was first observed.
 

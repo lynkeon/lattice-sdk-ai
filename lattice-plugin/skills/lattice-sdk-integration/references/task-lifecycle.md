@@ -157,7 +157,9 @@ def publish_entity():
                 source_update_time=now.isoformat(),
             ),
             task_catalog=TaskCatalog(task_definitions=[
-                TaskDefinition(task_specification_url="type.googleapis.com/<FullyQualified.TaskName>")
+                # Example only. Built-in: anduril.tasks.v2.Investigate, .VisualId, etc.
+                # Custom: <your-org>.tasks.v1.<YourTaskName>.
+                TaskDefinition(task_specification_url="type.googleapis.com/anduril.tasks.v2.Investigate")
             ]),
         )
         time.sleep(5)
@@ -198,9 +200,10 @@ e = c.entities.get_entity(entity_id=agent_id)
 print("live:", e.is_live, "catalog:", e.task_catalog.task_definitions)
 
 # 2. Send a task assigned to the agent, then poll its status a few times.
+# `type` below must match a type_url actually advertised in step 1, not this example value.
 task = c.tasks.create_task(
     display_name="validate",
-    specification=GoogleProtobufAny(type="type.googleapis.com/<TaskName>", objective={"entity_id": agent_id}),
+    specification=GoogleProtobufAny(type="type.googleapis.com/anduril.tasks.v2.Investigate", objective={"entity_id": agent_id}),
     author=Principal(system=System(service_name="validator")),
     relations={"assignee": Principal(system=System(entity_id=agent_id))},
     is_executed_elsewhere=False,
