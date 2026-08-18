@@ -29,6 +29,15 @@ codex plugin marketplace add anduril/lattice-sdk-ai
 codex plugin add lattice-plugin@lattice-sdk-ai
 ```
 
+### Claude Code
+
+Install the [plugin](lattice-plugin/README.md), which includes the skills and updates automatically:
+
+```bash
+claude plugin marketplace add anduril/lattice-sdk-ai
+claude plugin install lattice-plugin@lattice-sdk-ai
+```
+
 ### Manual installation
 
 > This route does not update itself. Re-run `npx skills update -y` when you want newer versions of

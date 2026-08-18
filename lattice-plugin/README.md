@@ -27,3 +27,6 @@ result in terms of the Lattice APIs.
 ## Layout
 
 `skills/` holds the skills, one directory per skill, each with a `SKILL.md`.
+
+The plugin ships a manifest for each supported agent, both pointing at the same `skills/`
+directory: `.codex-plugin/plugin.json` for Codex and `.claude-plugin/plugin.json` for Claude Code.
