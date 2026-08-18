@@ -1,0 +1,18 @@
+{
+  "name": "lattice-sdk-ai",
+  "owner": {
+    "name": "Anduril Industries",
+    "url": "https://www.anduril.com"
+  },
+  "metadata": {
+    "description": "Official skills for building Lattice integrations"
+  },
+  "plugins": [
+    {
+      "name": "lattice-plugin",
+      "source": "./lattice-plugin",
+      "description": "Build sandbox-first Lattice integrations across REST and gRPC. Publish entities, run taskable agents, use the Objects API, and validate against a live environment.",
+      "category": "development"
+    }
+  ]
+}
